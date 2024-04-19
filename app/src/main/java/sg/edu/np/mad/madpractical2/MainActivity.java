@@ -11,7 +11,6 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,5 +31,6 @@ public class MainActivity extends AppCompatActivity {
         tvName.setText(user.name);
         tvDescription.setText(user.description);
         btnFollow.setText("Follow");
+
     }
 }
