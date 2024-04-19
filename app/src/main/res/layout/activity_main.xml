@@ -39,6 +39,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="128dp"
         android:layout_height="128dp"
         android:layout_marginTop="50dp"
@@ -48,7 +49,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tvName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
@@ -58,10 +59,10 @@
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/tvDescription"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -74,20 +75,20 @@
         android:textSize="14dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnFollow"
         android:layout_width="20mm"
         android:layout_height="8mm"
         android:text="FOLLOW"
         android:textSize="16dp"
-        android:layout_marginLeft="30dp"
         android:layout_margin="30dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
 
     <Button
         android:id="@+id/button2"
@@ -95,12 +96,12 @@
         android:layout_height="8mm"
         android:text="MESSAGE"
         android:textSize="16dp"
-        android:layout_marginLeft="30dp"
         android:layout_margin="30dp"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+        app:layout_constraintStart_toEndOf="@+id/btnFollow"
+        app:layout_constraintTop_toBottomOf="@+id/tvDescription" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
